@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -28,11 +34,89 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button{
+  padding: 7px 12px;
+  background-color: #b061fb;
+  border-radius: 7px;
+  border: none;
+  color: white;
+}
+
+.button:hover{
+    background-color: #a13dff;
+
+}
+.container{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.wrapping-dialog{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c3440;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+
+.wrap-dialog{
+  background-color: rgb(247, 251, 255);
+  border-radius: 12px;
+  max-width: 600px;
+  padding: 5px 15px;
+  position: relative;
+
+  
+}
+
+.tbl-close{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: #b061fb;
+  background-color: rgb(217, 217, 217);
+  font-size: large;
+  font-style: bold;
+  position: absolute;
+  right: 10px;
+
+}
+.tbl-close:hover{
+  background-color: #a13dff;
+  color: white;
+}
+
+.content{
+  height: 200vh;
+}
+.opacity-0{
+  /* awalnya opacity 0 dan scale 95% */
+  opacity: 100%;
+  bottom: -400px;
+  scale: 100%;
+}
+.opacity-100{
+  /* muncul dengan opacity 100% dan scale 100% */
+  opacity: 100%;
+  bottom: 0px;
+  scale: 100%;
+}
+.duration-in{
+  transition: all 200ms;
+  animation-timing-function: ease-in;
+}
+.duration-out{
+  transition: all 400ms;
+  animation-timing-function: ease-in;
 }
