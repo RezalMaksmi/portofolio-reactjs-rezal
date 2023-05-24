@@ -61,25 +61,25 @@ const Aboutme = () => {
       <div className="container max-w-7xl  h-auto m-auto flex flex-col md:flex-row justify-between gap-10 md:px-10 px-4 relative">
         <div className='max-w-6xl w-full overflow-hidden bg-white dark:bg-[#565656] rounded-2xl h-auto drop-shadow-3xl py-10 md:p-14 px-6 relative top-0'>
             <div className='relative w-full dark:text-white '>
-                <h2 className='font-semibold text-4xl relative z-10 mb-4'>About Me</h2>
-                <div className='w-44 h-9 bg-[#EBEBEB] dark:bg-[#2B2B2B] absolute left-[-56px] top-[15px] '></div>
-                <span className=''>I am a student in Malang, East Java, who is currently studying for bachelor's degree, I am here focusing on making websites on the frontend.</span>
+                <h2 className='font-semibold sm:text-4xl text-2xl relative z-10 mb-4'>About Me</h2>
+                <div className='w-44 sm:h-9 h-6 bg-[#EBEBEB] dark:bg-[#2B2B2B] absolute left-[-56px] top-[15px] '></div>
+                <span className='sm:text-base text-xs sm:leading-5 leading-[8px]'>I am a student in Malang, East Java, who is currently studying for bachelor's degree, I am here focusing on making websites on the frontend.</span>
             </div>
             
             <div className='relative w-full mt-7 dark:text-white '>
-                <h2 className='font-semibold text-4xl relative z-10'>My Skill</h2>
+                <h2 className='font-semibold  sm:text-4xl text-2xl relative z-10'>My Skill</h2>
 
                 {
                   // 
                     skillMe.map(skill => {
                         return (
                         <div className='mt-7'>
-                            <div className='w-44 h-9 bg-[#EBEBEB] dark:bg-[#2B2B2B] absolute left-[-56px] top-[15px] '></div>
+                            <div className='w-44 sm:h-9 h-6 bg-[#EBEBEB] dark:bg-[#2B2B2B] absolute left-[-56px] top-[15px] '></div>
                             <div className='flex flex-row justify-between'>
-                                <span className=''>{skill.skillName}</span>
-                                <span>{skill.value}</span>
+                                <span className='sm:text-base text-xs'>{skill.skillName}</span>
+                                <span className='sm:text-base text-xs'>{skill.value}</span>
                             </div>
-                            <div className='w-full h-4 mt-3 bg-slate-400 rounded-full overflow-hidden'><div className='bg-slate-900 h-full animate__slideInLeft' id='skillValue' style={{width: `${skill.value}`,}}></div></div>
+                            <div className='w-full sm:h-4 h-2 mt-3 bg-slate-400 rounded-full overflow-hidden'><div className='bg-slate-900 h-full animate__slideInLeft' id='skillValue' style={{width: `${skill.value}`,}}></div></div>
                         </div>
                         )
                     })

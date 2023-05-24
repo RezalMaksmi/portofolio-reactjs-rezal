@@ -11,9 +11,9 @@ const Main = () => {
             <div className="container  max-w-7xl h-auto m-auto flex flex-row  justify-between items-center flex-wrap-reverse md:px-10 px-4">
                 
                 <div className='z-10 mt-40 block flex-col gap-4 max-[850px]:mt-[700px] mb-20'>
-                    <h1 className='text-[70px] dark:text-white leading-[80px] tracking-[0.055em] animate__bounceIn'>My Name <br></br> is <b>Rezal</b></h1>
+                    <h1 className='sm:text-[70px] text-4xl sm:leading-[80px] leading-[40px] dark:text-white  tracking-[0.055em] animate__bounceIn'>My Name <br></br> is <b>Rezal</b></h1>
 
-                    <p className='dark:text-white max-w-sm animate__animated animate__flipInX'>I am a programmer frontend Developer 2 years  of experience</p>
+                    <p className='dark:text-white max-w-sm animate__animated animate__flipInX sm:text-base text-xs sm:mt-0 mt-1'>I am a programmer frontend Developer 2 years  of experience</p>
                    
                    <a href="" className='py-3 px-14 mt-12 bg-[#FF6E40] inline-block rounded-full text-white shadow-md animate__animated animate__fadeInLeft'>Hire Me</a>
 

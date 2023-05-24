@@ -46,8 +46,8 @@ const Portofolio = () => {
             <div className='mt-16 w-full overflow-hidden bg-white dark:bg-[#565656] rounded-2xl h-auto drop-shadow-3xl py-10 md:p-14 px-6 relative top-0 '>
                 
                 <div className='relative w-full dark:text-white'>
-                    <h2 className='font-semibold text-4xl relative z-10 mb-4'>My Portofolio</h2>
-                    <div className='w-44 h-9 bg-[#EBEBEB] dark:bg-[#2B2B2B] absolute left-[-56px] top-[15px] '></div>
+                    <h2 className='font-semibold  sm:text-4xl text-2xl relative z-10 mb-4'>My Portofolio</h2>
+                    <div className='w-44 sm:h-9 h-6 bg-[#EBEBEB] dark:bg-[#2B2B2B] absolute left-[-56px] top-[15px] '></div>
                     
                     <div className='mt-9 flex justify-center items-center gap-10 flex-wrap'>
                   {
