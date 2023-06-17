@@ -10,8 +10,9 @@
     position: absolute;
     width: 554.23px;
     height: 1011.46px;
-    
-    background: #FF6E40;
+    /* --tw-bg-opacity: 1;
+    background-color: #273e6b; */
+    /* background: #FF6E40; */
     border-radius: 417px;
     transform: rotate(38.99deg);
     top: -300px;

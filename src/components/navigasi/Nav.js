@@ -19,7 +19,7 @@ const Nav = () => {
 
   return (
     <div className='z-50 '>
-      <nav className='bg-slate-50 dark:bg-[#222222] dark:text-white shadow-xl  h-20 px-8 z-50 fixed w-full' >
+      <nav className='bg-slate-50 bg-blur-2xl bg-opacity-40 dark:bg-blur-2xl dark:bg-opacity-40 backdrop-blur-lg rounded drop-shadow-lg dark:bg-[#222222] dark:text-white shadow-lg  h-20 px-8 z-50 fixed w-full' >
         <div class="container max-w-7xl h-full m-auto flex flex-row  justify-between items-center ">
             <ul className='flex-row flex gap-10 items-center h-full max-[1000px]:hidden'>
                 <li><a href="#home">Home</a></li>
@@ -34,7 +34,7 @@ const Nav = () => {
                     {({ active }) => (
                         <a
                         className={`${active && 'text-[#FF6E40]'} `}
-                        href="/account-settings"
+                        href="#home"
                         >
                         Home
                         </a>
@@ -44,7 +44,7 @@ const Nav = () => {
                     {({ active }) => (
                         <a
                         className={`${active && 'text-[#FF6E40]'}`}
-                        href="/account-settings"
+                        href="#about"
                         >
                         About
                         </a>
@@ -54,7 +54,7 @@ const Nav = () => {
                     {({ active }) => (
                         <a
                         className={`${active && 'text-[#FF6E40]'}`}
-                        href="/account-settings"
+                        href="#contact"
                         >
                         Contact
                         </a>
@@ -64,7 +64,7 @@ const Nav = () => {
                     {({ active }) => (
                         <a
                         className={`${active && 'text-[#FF6E40]'}`}
-                        href="/account-settings"
+                        href="#portofolio"
                         >
                         Portofolio
                         </a>
@@ -76,18 +76,21 @@ const Nav = () => {
             <Switch
                 checked={enabled}
                 onChange={setEnabled}
-                className={`${enabled ? 'bg-[#FF6E40]' : 'bg-[#ff8863]'}
+                className={`${enabled ? 'bg-white bg-blur-2xl bg-opacity-40' : 'bg-gradient-to-br from-cyan-500 to-blue-500'}
                 relative inline-flex h-[29px] w-[65px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
             >
-                <span className="sr-only">Use setting</span>
+                <span className="sr-only ">Use setting</span>
                 <span
                 aria-hidden="true"
-                className={`${enabled ? 'translate-x-9 bg-[#ffe168]'  : 'translate-x-0'}
+                className={`${enabled ? 'translate-x-9 bg-gradient-to-br from-cyan-500 to-blue-500'  : 'translate-x-0 '}
                     pointer-events-none inline-block h-[25px] w-[25px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                 />
             </Switch>
-
-            <a href="" className='px-3 py-2 bg-[#EEEEEE] dark:text-black dark:border-white dark:bg-[#EEEEEE] rounded-lg text-neutral-950 border-2 border-slate-950'>Download CV</a>
+            {/* relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 */}
+            
+            <button href="" className=' inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800'>
+                <span className='relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0'>Doanload CV</span>
+            </button>
         </div>
       </nav>
     </div>
