@@ -87,7 +87,7 @@ const Aboutme = () => {
                 
             </div>
         </div>
-        <div className='md:max-w-[102px] flex-wrap w-full h-max bg-[#FF6E40] rounded-3xl top-40 sticky flex md:flex-col flex-row justify-center items-center gap-6 py-6 animate__animated animate__bounceInUp'>
+        <div className='md:max-w-[102px] flex-wrap w-full h-max bg-[#FF6E40] bg-gradient-to-br from-cyan-500 to-blue-500 rounded-3xl top-40 sticky flex md:flex-col flex-row justify-center items-center gap-6 py-6 animate__animated animate__bounceInUp'>
             <a href="#home" className='sm:w-14 sm:h-14 w-10 h-10 rounded-full bg-white flex justify-center items-center sm:text-2xl text-xl text-[#FF3D3D] hover:bg-[#FF3D3D] hover:text-white'><BsInstagram /> </a>
             <a href="#home" className='sm:w-14 sm:h-14 w-10 h-10  rounded-full bg-white flex justify-center items-center sm:text-4xl text-xl text-[#3083FF] hover:bg-[#3083FF] hover:text-white'><CiFacebook /> </a>
             <a href="#home" className='sm:w-14 sm:h-14 w-10 h-10  rounded-full bg-white flex justify-center items-center sm:text-3xl text-xl text-[#1C1C1C] hover:bg-[#1C1C1C] hover:text-white'><BsGithub /> </a>
